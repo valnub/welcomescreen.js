@@ -69,7 +69,7 @@ var Welcomescreen = function (slides, options) {
       var $slide = $('<div class="swiper-slide">').appendTo($swiperWrapper);
       if (slide.id) $slide.attr('id', slide.id);
 
-      if (enableTitle) $('<div class="welcomescreen-title ' + (!slide.title ? 'hide-title' :'') + '" data-swiper-parallax="' + (options.parallax ? options.parallaxSlideElements.title :'') + '">' + (slide.title || '') + '</div>').appendTo($slide);
+      if (options.enableTitle) $('<div class="welcomescreen-title ' + (!slide.title ? 'hide-title' :'') + '" data-swiper-parallax="' + (options.parallax ? options.parallaxSlideElements.title :'') + '">' + (slide.title || '') + '</div>').appendTo($slide);
 
       if (slide.content) $('<div class="welcomescreen-content">' + slide.content + '</div>').appendTo($slide);
       else {
