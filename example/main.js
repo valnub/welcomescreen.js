@@ -3,7 +3,7 @@
 
 // Init method
 
-$(document).ready(function () {
+(function ($) {
   
   var options = {
     'bgcolor': '#0da6ec',
@@ -60,4 +60,4 @@ $(document).ready(function () {
     welcomescreen.previous(); 
   });
   
-});
+})(jQuery);
