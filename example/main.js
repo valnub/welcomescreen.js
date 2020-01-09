@@ -6,12 +6,12 @@
 (function ($) {
   
   var options = {
-    'bgcolor': '#0da6ec',
-    'fontcolor': '#fff',
-    'onOpened': function () {
+    bgcolor: '#0da6ec',
+    fontcolor: '#fff',
+    onOpened: function () {
       console.log("welcome screen opened");
     },
-    'onClosed': function () {
+    onClosed: function () {
       console.log("welcome screen closed");
     }
   },
@@ -48,7 +48,7 @@
     welcomescreen.close();
   });
 
-  $('.tutorial-open-btn').click(function () {
+  $(document).on('click', '.tutorial-open-btn', function () {
     welcomescreen.open();  
   });
 
