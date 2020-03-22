@@ -24,7 +24,7 @@ var Welcomescreen = function (slides, options) {
       open: true,               // open welcome screen on init
       parallax: false,          // adds parallax capabilities
       parallaxSpeed: 600,       // parallax default speed
-      parallaxBackgroundImage: '//lorempixel.com/900/600/nightlife/2/', // parallax default background image
+      parallaxBackgroundImage: 'https://i.picsum.photos/id/1082/400/600.jpg', // parallax default background image
       parallaxBackground: '-23%', // parallax default background effect
       parallaxSlideElements: {  // start positions of elements for parallax
           title: -100, 

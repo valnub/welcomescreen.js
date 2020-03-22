@@ -87,7 +87,7 @@ Available options (if not set, default will be used)
 - **onOpened** (Default: none) Callback function when welcomescreen is opened
 - **onClosed** (Default: none) Callback function when welcomescreen is closed
 - **parallax** (Default: true), Enable parallax
-- **parallaxBackgroundImage** (Default: '//lorempixel.com/900/600/nightlife/2/') Parallax default background image
+- **parallaxBackgroundImage** (Default: 'https://i.picsum.photos/id/1082/400/600.jpg') Parallax default background image
 - **parallaxBackground** (Default percentage: '-23%') Parallax default background speed effect
 - **parallaxSlideElements** (Default number per element: {title: -100, subtitle: -200, text: -300}) Set speed of each element in parallax mode
 - **enableTitle** (Default: false) Previous handling / enabling adds new styles that might break your previously configured visuals if you upgrade
