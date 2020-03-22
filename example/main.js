@@ -3,18 +3,20 @@
 
 // Init method
 
-$(document).ready(function () {
+(function ($) {
   
-  var options = {
-    'bgcolor': '#0da6ec',
-    'fontcolor': '#fff',
-    'onOpened': function () {
-      console.log("welcome screen opened");
+  var
+    options = {
+      bgcolor: '#0da6ec',
+      fontcolor: '#fff',
+      onOpened: function () {
+        console.log("welcome screen opened");
+      },
+      onClosed: function () {
+        console.log("welcome screen closed");
+      },
+      parallax: true,
     },
-    'onClosed': function () {
-      console.log("welcome screen closed");
-    }
-  },
     welcomescreen_slides,
     welcomescreen;
 
@@ -48,7 +50,7 @@ $(document).ready(function () {
     welcomescreen.close();
   });
 
-  $('.tutorial-open-btn').click(function () {
+  $(document).on('click', '.tutorial-open-btn', function () {
     welcomescreen.open();  
   });
 
@@ -60,4 +62,4 @@ $(document).ready(function () {
     welcomescreen.previous(); 
   });
   
-});
+})(jQuery);
